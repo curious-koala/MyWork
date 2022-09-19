@@ -2,19 +2,18 @@
 #use python for base image
 FROM python:3.8.0-slim
 
-#expose the port number to use
-EXPOSE 5000
-
 # USe working directory /app
 WORKDIR /app
 
-#Copy all the current directory content to app
-ADD . /app
 
 # Install pip requirements
-#COPY requirements.txt .
+COPY './requirements.txt' .
+
+#run pip installation 
 RUN python -m pip install -r requirements.txt
 
+#copy everything
 COPY . .
 
-CMD ["python3", "app.py", -"m", "flask", "run", "--host=0.0.0.0"]
+#define entrypoints
+ENTRYPOINT ["python", "app.py"]
