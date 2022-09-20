@@ -14,5 +14,8 @@ Github is used for CI/CD implementation of the code into the Azure web App servi
 
 Users can put their query and see the results on the endpoint https://nikharflaskapp1.azurewebsites.net/requests?input= (Enter your String).
 
+# Docker Image
+
+The idea is to use Docker images in future developments in order to utilize the concept of containerization of the Web APP. (For now it's just placed here as placeholder and not used in web app deployment CI/CD).
 
 
