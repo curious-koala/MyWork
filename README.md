@@ -12,7 +12,7 @@ Github is used for CI/CD implementation of the code into the Azure web App servi
 
 # Query 
 
-Users can put their query and see the results on the endpoint https://nikharflaskapp1.azurewebsites.net/requests?input=(Enter your String). 
+Users can put their query and see the results on the endpoint https://nikharflaskapp1.azurewebsites.net/requests?input= (Enter your String).
 
 
 
